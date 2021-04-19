@@ -24,9 +24,9 @@ def csv_similarity_score(csv_true: str, csv_test: str, delimiter: str = ",") -> 
         range [0.0, 1.0] where 0.0 indicates no matching data and 1.0 indicates
         an exact match of all data.
 
-    @param delimiter: Expected CSV delimiter, default = ','
     @param csv_true: Source of truth: path to csv file
     @param csv_test: Test cases: path to csv file
+    @param delimiter: Expected CSV delimiter, default = ','
     @return: Returns average similarity score, always between 0.0 and 1.0
     """
     true = pd.read_csv(csv_true, delimiter=delimiter)
