@@ -1,5 +1,5 @@
 # LambdaLib
-Lambda Labs Python Library of General Solutions
+Lambda School Labs Python Library of General Data Science Solutions
 
 
 ## LambdaLib Developer Guidelines
