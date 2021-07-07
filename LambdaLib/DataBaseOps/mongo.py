@@ -6,7 +6,7 @@ import pandas as pd
 from dotenv import load_dotenv
 
 
-class DataBase:
+class DataModelMongo:
     """ MongoDB Data Model """
     load_dotenv()
     db_url = getenv('DB_URL')
@@ -28,6 +28,3 @@ class DataBase:
 
     def get_df(self) -> pd.DataFrame:
         return pd.DataFrame(self.find_many({}))
-
-    def reset(self):
-        self.connect().delete_many({})

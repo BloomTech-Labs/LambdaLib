@@ -27,8 +27,16 @@ similar the data is.
 
 ## DataBase Ops
 
-### MongoDB
+### DataModelMongo Class
+- `find(dict) -> dict`
+- `insert(dict)`
+- `find_many(dict, int) -> Iterator[dict]`
+- `insert_many(dict)`
+- `get_df() -> DataFrame`
 
-### SQL
+### DataModelSQL Class
 
 #### HTML to DataFrame
+
+
+## API & DevOps
