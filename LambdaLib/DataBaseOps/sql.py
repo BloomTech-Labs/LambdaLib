@@ -5,7 +5,7 @@ import psycopg2
 from dotenv import load_dotenv
 
 
-class DataModel:
+class DataModelSQL:
     load_dotenv()
     db_url = os.getenv('DB_URL')
 
@@ -23,7 +23,7 @@ class DataModel:
         curs.close()
         conn.close()
 
-    def db_query(self, sql_query) -> list:
+    def db_query(self, sql_query: str) -> list:
         """ DB Getter - Returns query result as a List """
         conn = psycopg2.connect(self.db_url)
         curs = conn.cursor()
@@ -36,7 +36,7 @@ class DataModel:
 
 if __name__ == '__main__':
 
-    db = DataModel("testing", [
+    db = DataModelSQL("testing", [
         "Id SERIAL PRIMARY KEY NOT NULL",
         "Name TEXT NOT NULL",
         "Age INT NOT NULL",

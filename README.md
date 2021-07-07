@@ -12,6 +12,8 @@ Lambda School Labs Python Library of General Data Science Solutions
 7. Code examples will be included for each feature.
 
 
+## Analysis
+
 ### CSV Similarity Score
 Compares two csv files and returns a score between 0.0 and 1.0 to indicate how 
 similar the data is. 
@@ -21,3 +23,12 @@ similar the data is.
 - Each row of data should be a unique observation, each column representing a single aspect.
 - CSV is a convenient format, but a database adapter could be useful in the future.
 - Data will be primitive strings or numbers and not more complex types.
+
+
+## DataBase Ops
+
+### MongoDB
+
+### SQL
+
+#### HTML to DataFrame
