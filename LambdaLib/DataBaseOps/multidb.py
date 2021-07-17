@@ -81,3 +81,15 @@ class MultiDB:
         self.conn.close()
     def __repr__(self):
         return "DB CONN: {}\n DBTYPE: {}".format(self.conn,self.dbtype)
+
+if __name__ == "__main__":
+    #mysql test:
+    import os
+    from dotenv import load_dotenv
+    load_dotenv()
+    db_url = os.environ.get('DB_URL')
+    print(db_url)
+    test = MultiDB()
+    test.db_connect(db_url)
+    print(test)
+    test.db_close()
