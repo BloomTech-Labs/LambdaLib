@@ -35,8 +35,10 @@ similar the data is.
 - `get_df() -> DataFrame`
 
 ### DataModelSQL Class
+- `db_action(str)`
+- `db_query(str) -> list`
 
 #### HTML to DataFrame
+- `html_to_df(str, int) -> DataFrame`
 
-
-## API & DevOps
+## DevOps API
